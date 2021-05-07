@@ -4,6 +4,7 @@ import Posts from "./components/posts";
 import NotFound from "./components/notFound";
 import Home from "./components/home";
 import NavBar from "./components/common/navbar";
+import loginComp from "./components/loginComp"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
                     component={Posts}/>
                     <Route path="/not-found" component={NotFound} />
                     <Route path="/" exact component={Home} />
+                    <Route path="/login" component={loginComp}/>
                     <Redirect to="/not-found" />
                 </Switch>
             </div>
